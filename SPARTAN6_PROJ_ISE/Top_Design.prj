@@ -1,0 +1,6 @@
+vhdl work "ipcore_dir/DCM_Pre.vhd"
+vhdl work "ipcore_dir/DCM_Post.vhd"
+vhdl work "ipcore_dir/ADSPI_DCM.vhd"
+vhdl work "ipcore_dir/RAM_Block.vhd"
+vhdl work "ipcore_dir/DCM_clk.vhd"
+vhdl work "Top_Design.vhd"

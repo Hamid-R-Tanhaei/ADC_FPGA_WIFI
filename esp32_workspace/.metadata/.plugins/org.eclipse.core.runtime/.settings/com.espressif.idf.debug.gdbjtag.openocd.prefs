@@ -1,0 +1,16 @@
+eclipse.preferences.version=1
+gdb.client.commands=set mem inaccessible-by-default off
+gdb.client.doStart=true
+gdb.client.executable=C\:\\Users\\6540\\.espressif\\tools\\xtensa-esp32-elf\\esp-2020r2-8.2.0\\xtensa-esp32-elf\\bin\\xtensa-esp32-elf-gdb.exe
+gdb.client.other=
+gdb.openocd.doDebugInRam=false
+gdb.openocd.doInitialReset=true
+gdb.openocd.doPreRunReset=true
+gdb.openocd.enableSemihosting=true
+gdb.openocd.init.other=mon reset halt\r\nflushregs\r\nset remote hardware-watchpoint-limit 2
+gdb.openocd.initialReset.type=init
+gdb.openocd.preRun.other=
+gdb.openocd.preRunReset.type=halt
+gdb.server.doStart=true
+gdb.server.executable=${openocd_path}/${openocd_executable}
+gdb.server.other=-s ${openocd_path}/share/openocd/scripts -f interface/ftdi/esp32_devkitj_v1.cfg -f board/esp32-wrover-kit-1.8v.cfg

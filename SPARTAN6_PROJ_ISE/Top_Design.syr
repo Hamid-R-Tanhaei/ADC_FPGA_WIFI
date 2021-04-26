@@ -1,0 +1,643 @@
+Release 14.7 - xst P.20131013 (nt64)
+Copyright (c) 1995-2013 Xilinx, Inc.  All rights reserved.
+--> Parameter TMPDIR set to xst/projnav.tmp
+
+
+Total REAL time to Xst completion: 1.00 secs
+Total CPU time to Xst completion: 0.33 secs
+ 
+--> Parameter xsthdpdir set to xst
+
+
+Total REAL time to Xst completion: 1.00 secs
+Total CPU time to Xst completion: 0.33 secs
+ 
+--> Reading design: Top_Design.prj
+
+TABLE OF CONTENTS
+  1) Synthesis Options Summary
+  2) HDL Parsing
+  3) HDL Elaboration
+  4) HDL Synthesis
+       4.1) HDL Synthesis Report
+  5) Advanced HDL Synthesis
+       5.1) Advanced HDL Synthesis Report
+  6) Low Level Synthesis
+  7) Partition Report
+  8) Design Summary
+       8.1) Primitive and Black Box Usage
+       8.2) Device utilization summary
+       8.3) Partition Resource Summary
+       8.4) Timing Report
+            8.4.1) Clock Information
+            8.4.2) Asynchronous Control Signals Information
+            8.4.3) Timing Summary
+            8.4.4) Timing Details
+            8.4.5) Cross Clock Domains Report
+
+
+=========================================================================
+*                      Synthesis Options Summary                        *
+=========================================================================
+---- Source Parameters
+Input File Name                    : "Top_Design.prj"
+Ignore Synthesis Constraint File   : NO
+
+---- Target Parameters
+Output File Name                   : "Top_Design"
+Output Format                      : NGC
+Target Device                      : xc6slx9-2-tqg144
+
+---- Source Options
+Top Module Name                    : Top_Design
+Automatic FSM Extraction           : YES
+FSM Encoding Algorithm             : Auto
+Safe Implementation                : No
+FSM Style                          : LUT
+RAM Extraction                     : Yes
+RAM Style                          : Auto
+ROM Extraction                     : Yes
+Shift Register Extraction          : YES
+ROM Style                          : Auto
+Resource Sharing                   : YES
+Asynchronous To Synchronous        : NO
+Shift Register Minimum Size        : 2
+Use DSP Block                      : Auto
+Automatic Register Balancing       : No
+
+---- Target Options
+LUT Combining                      : Auto
+Reduce Control Sets                : Auto
+Add IO Buffers                     : YES
+Global Maximum Fanout              : 100000
+Add Generic Clock Buffer(BUFG)     : 16
+Register Duplication               : YES
+Optimize Instantiated Primitives   : NO
+Use Clock Enable                   : Auto
+Use Synchronous Set                : Auto
+Use Synchronous Reset              : Auto
+Pack IO Registers into IOBs        : Auto
+Equivalent register Removal        : YES
+
+---- General Options
+Optimization Goal                  : Speed
+Optimization Effort                : 1
+Power Reduction                    : NO
+Keep Hierarchy                     : No
+Netlist Hierarchy                  : As_Optimized
+RTL Output                         : Yes
+Global Optimization                : AllClockNets
+Read Cores                         : YES
+Write Timing Constraints           : NO
+Cross Clock Analysis               : NO
+Hierarchy Separator                : /
+Bus Delimiter                      : <>
+Case Specifier                     : Maintain
+Slice Utilization Ratio            : 100
+BRAM Utilization Ratio             : 100
+DSP48 Utilization Ratio            : 100
+Auto BRAM Packing                  : NO
+Slice Utilization Ratio Delta      : 5
+
+---- Other Options
+Cores Search Directories           : {"ipcore_dir"  }
+
+=========================================================================
+
+
+=========================================================================
+*                          HDL Parsing                                  *
+=========================================================================
+Parsing VHDL file "D:\GitHub\FPGA_ADC_WIFI\SPARTAN6_PROJ_ISE\ipcore_dir\DCM_Pre.vhd" into library work
+Parsing entity <DCM_Pre>.
+Parsing architecture <xilinx> of entity <dcm_pre>.
+Parsing VHDL file "D:\GitHub\FPGA_ADC_WIFI\SPARTAN6_PROJ_ISE\ipcore_dir\DCM_Post.vhd" into library work
+Parsing entity <DCM_Post>.
+Parsing architecture <xilinx> of entity <dcm_post>.
+Parsing VHDL file "D:\GitHub\FPGA_ADC_WIFI\SPARTAN6_PROJ_ISE\ipcore_dir\ADSPI_DCM.vhd" into library work
+Parsing entity <ADSPI_DCM>.
+Parsing architecture <xilinx> of entity <adspi_dcm>.
+Parsing VHDL file "D:\GitHub\FPGA_ADC_WIFI\SPARTAN6_PROJ_ISE\ipcore_dir\RAM_Block.vhd" into library work
+Parsing entity <RAM_Block>.
+Parsing architecture <RAM_Block_a> of entity <ram_block>.
+Parsing VHDL file "D:\GitHub\FPGA_ADC_WIFI\SPARTAN6_PROJ_ISE\ipcore_dir\DCM_clk.vhd" into library work
+Parsing entity <DCM_clk>.
+Parsing architecture <xilinx> of entity <dcm_clk>.
+Parsing VHDL file "D:\GitHub\FPGA_ADC_WIFI\SPARTAN6_PROJ_ISE\Top_Design.vhd" into library work
+Parsing entity <Top_Design>.
+Parsing architecture <Behavioral> of entity <top_design>.
+
+=========================================================================
+*                            HDL Elaboration                            *
+=========================================================================
+
+Elaborating entity <Top_Design> (architecture <Behavioral>) from library <work>.
+WARNING:HDLCompiler:1127 - "D:\GitHub\FPGA_ADC_WIFI\SPARTAN6_PROJ_ISE\Top_Design.vhd" Line 189: Assignment to ad_spi_error ignored, since the identifier is never used
+
+Elaborating entity <DCM_Post> (architecture <xilinx>) from library <work>.
+
+Elaborating entity <DCM_Pre> (architecture <xilinx>) from library <work>.
+
+Elaborating entity <ADSPI_DCM> (architecture <xilinx>) from library <work>.
+
+Elaborating entity <RAM_Block> (architecture <RAM_Block_a>) from library <work>.
+
+=========================================================================
+*                           HDL Synthesis                               *
+=========================================================================
+
+Synthesizing Unit <Top_Design>.
+    Related source file is "D:\GitHub\FPGA_ADC_WIFI\SPARTAN6_PROJ_ISE\Top_Design.vhd".
+INFO:Xst:3210 - "D:\GitHub\FPGA_ADC_WIFI\SPARTAN6_PROJ_ISE\Top_Design.vhd" line 342: Output port <CLK_OUT_5M> of the instance <Inst_Post_DCM> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "D:\GitHub\FPGA_ADC_WIFI\SPARTAN6_PROJ_ISE\Top_Design.vhd" line 342: Output port <CLK_VALID> of the instance <Inst_Post_DCM> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "D:\GitHub\FPGA_ADC_WIFI\SPARTAN6_PROJ_ISE\Top_Design.vhd" line 354: Output port <CLK_VALID> of the instance <inst_Pre_DCM> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "D:\GitHub\FPGA_ADC_WIFI\SPARTAN6_PROJ_ISE\Top_Design.vhd" line 364: Output port <CLK_VALID> of the instance <inst_ADSPI_DCM> is unconnected or connected to loadless signal.
+    Found 1-bit register for signal <AD_SEN>.
+    Found 1-bit register for signal <AD_reset>.
+    Found 1-bit register for signal <AD_res_flag>.
+    Found 1-bit register for signal <AD_init>.
+    Found 7-bit register for signal <AD_SPI_cntr>.
+    Found 15-bit register for signal <AD_SPI_reg>.
+    Found 1-bit register for signal <AD_SDIO_out>.
+    Found 1-bit register for signal <AD_SDIO_dir>.
+    Found 1-bit register for signal <AD_Readback_flag>.
+    Found 4-bit register for signal <AD_reg_idx>.
+    Found 4-bit register for signal <test_sig_cntr>.
+    Found 1-bit register for signal <Test_sig_Rx>.
+    Found 1-bit register for signal <RAM1_WE>.
+    Found 16-bit register for signal <Timer_cntr>.
+    Found 1-bit register for signal <AD_pwup>.
+    Found 1-bit register for signal <AD_Tx_En>.
+    Found 1-bit register for signal <Scan_En>.
+    Found 1-bit register for signal <AD_Rx_En>.
+    Found 10-bit register for signal <Ram_Waddr_cntr>.
+    Found 10-bit register for signal <AD_Rx_Dat>.
+    Found 10-bit register for signal <RAM1_WData>.
+    Found 10-bit register for signal <RAM1_WAddr>.
+    Found 1-bit register for signal <esp_rdy_cur>.
+    Found 1-bit register for signal <esp_rdy_pre>.
+    Found 1-bit register for signal <esp_clk_cur>.
+    Found 1-bit register for signal <esp_clk_pre>.
+    Found 10-bit register for signal <Ram_Raddr_cntr>.
+    Found 10-bit register for signal <RAM1_RAddr>.
+    Found 8-bit register for signal <ESP_Data_out>.
+    Found 1-bit register for signal <AD_clk_synth>.
+    Found 25-bit register for signal <AD_RST_cntr>.
+    Found 25-bit adder for signal <AD_RST_cntr[24]_GND_4_o_add_1_OUT> created at line 1241.
+    Found 7-bit adder for signal <AD_SPI_cntr[6]_GND_4_o_add_6_OUT> created at line 1241.
+    Found 4-bit adder for signal <AD_reg_idx[3]_GND_4_o_add_10_OUT> created at line 1241.
+    Found 4-bit adder for signal <test_sig_cntr[3]_GND_4_o_add_46_OUT> created at line 1241.
+    Found 16-bit adder for signal <Timer_cntr[15]_GND_4_o_add_54_OUT> created at line 1241.
+    Found 10-bit adder for signal <Ram_Waddr_cntr[9]_GND_4_o_add_58_OUT> created at line 1241.
+    Found 10-bit adder for signal <Ram_Raddr_cntr[9]_GND_4_o_add_63_OUT> created at line 1241.
+    Found 16x15-bit Read Only RAM for signal <AD_reg_idx[3]_GND_4_o_wide_mux_7_OUT>
+    Found 1-bit tristate buffer for signal <AD_SDIO> created at line 183
+    Found 1-bit tristate buffer for signal <AD_ADIO<9>> created at line 285
+    Found 1-bit tristate buffer for signal <AD_ADIO<8>> created at line 285
+    Found 1-bit tristate buffer for signal <AD_ADIO<7>> created at line 285
+    Found 1-bit tristate buffer for signal <AD_ADIO<6>> created at line 285
+    Found 1-bit tristate buffer for signal <AD_ADIO<5>> created at line 285
+    Found 1-bit tristate buffer for signal <AD_ADIO<4>> created at line 285
+    Found 1-bit tristate buffer for signal <AD_ADIO<3>> created at line 285
+    Found 1-bit tristate buffer for signal <AD_ADIO<2>> created at line 285
+    Found 1-bit tristate buffer for signal <AD_ADIO<1>> created at line 285
+    Found 1-bit tristate buffer for signal <AD_ADIO<0>> created at line 285
+    Summary:
+	inferred   1 RAM(s).
+	inferred   7 Adder/Subtractor(s).
+	inferred 157 D-type flip-flop(s).
+	inferred   4 Multiplexer(s).
+	inferred  11 Tristate(s).
+Unit <Top_Design> synthesized.
+
+Synthesizing Unit <DCM_Post>.
+    Related source file is "D:\GitHub\FPGA_ADC_WIFI\SPARTAN6_PROJ_ISE\ipcore_dir\DCM_Post.vhd".
+    Summary:
+	no macro.
+Unit <DCM_Post> synthesized.
+
+Synthesizing Unit <DCM_Pre>.
+    Related source file is "D:\GitHub\FPGA_ADC_WIFI\SPARTAN6_PROJ_ISE\ipcore_dir\DCM_Pre.vhd".
+    Summary:
+	no macro.
+Unit <DCM_Pre> synthesized.
+
+Synthesizing Unit <ADSPI_DCM>.
+    Related source file is "D:\GitHub\FPGA_ADC_WIFI\SPARTAN6_PROJ_ISE\ipcore_dir\ADSPI_DCM.vhd".
+    Summary:
+	no macro.
+Unit <ADSPI_DCM> synthesized.
+
+=========================================================================
+HDL Synthesis Report
+
+Macro Statistics
+# RAMs                                                 : 1
+ 16x15-bit single-port Read Only RAM                   : 1
+# Adders/Subtractors                                   : 7
+ 10-bit adder                                          : 2
+ 16-bit adder                                          : 1
+ 25-bit adder                                          : 1
+ 4-bit adder                                           : 2
+ 7-bit adder                                           : 1
+# Registers                                            : 31
+ 1-bit register                                        : 18
+ 10-bit register                                       : 6
+ 15-bit register                                       : 1
+ 16-bit register                                       : 1
+ 25-bit register                                       : 1
+ 4-bit register                                        : 2
+ 7-bit register                                        : 1
+ 8-bit register                                        : 1
+# Multiplexers                                         : 4
+ 1-bit 2-to-1 multiplexer                              : 3
+ 15-bit 2-to-1 multiplexer                             : 1
+# Tristates                                            : 11
+ 1-bit tristate buffer                                 : 11
+
+=========================================================================
+
+=========================================================================
+*                       Advanced HDL Synthesis                          *
+=========================================================================
+
+Reading core <ipcore_dir/RAM_Block.ngc>.
+Loading core <RAM_Block> for timing and area information for instance <inst_RAM_block1>.
+WARNING:Xst:1293 - FF/Latch <AD_Tx_En> has a constant value of 0 in block <Top_Design>. This FF/Latch will be trimmed during the optimization process.
+
+Synthesizing (advanced) Unit <Top_Design>.
+The following registers are absorbed into counter <Timer_cntr>: 1 register on signal <Timer_cntr>.
+The following registers are absorbed into counter <Ram_Waddr_cntr>: 1 register on signal <Ram_Waddr_cntr>.
+The following registers are absorbed into counter <Ram_Raddr_cntr>: 1 register on signal <Ram_Raddr_cntr>.
+The following registers are absorbed into counter <test_sig_cntr>: 1 register on signal <test_sig_cntr>.
+The following registers are absorbed into counter <AD_SPI_cntr>: 1 register on signal <AD_SPI_cntr>.
+The following registers are absorbed into counter <AD_RST_cntr>: 1 register on signal <AD_RST_cntr>.
+The following registers are absorbed into counter <AD_reg_idx>: 1 register on signal <AD_reg_idx>.
+INFO:Xst:3218 - HDL ADVISOR - The RAM <Mram_AD_reg_idx[3]_GND_4_o_wide_mux_7_OUT> will be implemented on LUTs either because you have described an asynchronous read or because of currently unsupported block RAM features. If you have described an asynchronous read, making it synchronous would allow you to take advantage of available block RAM resources, for optimized device usage and improved timings. Please refer to your documentation for coding guidelines.
+    -----------------------------------------------------------------------
+    | ram_type           | Distributed                         |          |
+    -----------------------------------------------------------------------
+    | Port A                                                              |
+    |     aspect ratio   | 16-word x 15-bit                    |          |
+    |     weA            | connected to signal <GND>           | high     |
+    |     addrA          | connected to signal <AD_reg_idx>    |          |
+    |     diA            | connected to signal <GND>           |          |
+    |     doA            | connected to internal node          |          |
+    -----------------------------------------------------------------------
+Unit <Top_Design> synthesized (advanced).
+
+=========================================================================
+Advanced HDL Synthesis Report
+
+Macro Statistics
+# RAMs                                                 : 1
+ 16x15-bit single-port distributed Read Only RAM       : 1
+# Counters                                             : 7
+ 10-bit up counter                                     : 2
+ 16-bit up counter                                     : 1
+ 25-bit up counter                                     : 1
+ 4-bit up counter                                      : 2
+ 7-bit up counter                                      : 1
+# Registers                                            : 81
+ Flip-Flops                                            : 81
+# Multiplexers                                         : 4
+ 1-bit 2-to-1 multiplexer                              : 3
+ 15-bit 2-to-1 multiplexer                             : 1
+
+=========================================================================
+
+=========================================================================
+*                         Low Level Synthesis                           *
+=========================================================================
+WARNING:Xst:1293 - FF/Latch <AD_Tx_En> has a constant value of 0 in block <Top_Design>. This FF/Latch will be trimmed during the optimization process.
+INFO:Xst:2261 - The FF/Latch <Scan_En> in Unit <Top_Design> is equivalent to the following FF/Latch, which will be removed : <AD_Rx_En> 
+
+Optimizing unit <Top_Design> ...
+
+Mapping all equations...
+Building and optimizing final netlist ...
+Found area constraint ratio of 100 (+ 5) on block Top_Design, actual ratio is 3.
+
+Final Macro Processing ...
+
+=========================================================================
+Final Register Report
+
+Macro Statistics
+# Registers                                            : 155
+ Flip-Flops                                            : 155
+
+=========================================================================
+
+=========================================================================
+*                           Partition Report                            *
+=========================================================================
+
+Partition Implementation Status
+-------------------------------
+
+  No Partitions were found in this design.
+
+-------------------------------
+
+=========================================================================
+*                            Design Summary                             *
+=========================================================================
+
+Top Level Output File Name         : Top_Design.ngc
+
+Primitive and Black Box Usage:
+------------------------------
+# BELS                             : 280
+#      GND                         : 2
+#      INV                         : 12
+#      LUT1                        : 57
+#      LUT2                        : 9
+#      LUT3                        : 12
+#      LUT4                        : 6
+#      LUT5                        : 26
+#      LUT6                        : 36
+#      MUXCY                       : 57
+#      VCC                         : 2
+#      XORCY                       : 61
+# FlipFlops/Latches                : 155
+#      FD                          : 51
+#      FDE                         : 56
+#      FDR                         : 9
+#      FDRE                        : 39
+# RAMS                             : 1
+#      RAMB16BWER                  : 1
+# Clock Buffers                    : 6
+#      BUFG                        : 6
+# IO Buffers                       : 41
+#      IBUF                        : 2
+#      IBUFG                       : 3
+#      IOBUF                       : 10
+#      OBUF                        : 25
+#      OBUFT                       : 1
+# DCMs                             : 3
+#      DCM_SP                      : 3
+
+Device utilization summary:
+---------------------------
+
+Selected Device : 6slx9tqg144-2 
+
+
+Slice Logic Utilization: 
+ Number of Slice Registers:             155  out of  11440     1%  
+ Number of Slice LUTs:                  158  out of   5720     2%  
+    Number used as Logic:               158  out of   5720     2%  
+
+Slice Logic Distribution: 
+ Number of LUT Flip Flop pairs used:    206
+   Number with an unused Flip Flop:      51  out of    206    24%  
+   Number with an unused LUT:            48  out of    206    23%  
+   Number of fully used LUT-FF pairs:   107  out of    206    51%  
+   Number of unique control sets:        12
+
+IO Utilization: 
+ Number of IOs:                          42
+ Number of bonded IOBs:                  41  out of    102    40%  
+
+Specific Feature Utilization:
+ Number of Block RAM/FIFO:                1  out of     32     3%  
+    Number using Block RAM only:          1
+ Number of BUFG/BUFGCTRLs:                6  out of     16    37%  
+
+---------------------------
+Partition Resource Summary:
+---------------------------
+
+  No Partitions were found in this design.
+
+---------------------------
+
+
+=========================================================================
+Timing Report
+
+NOTE: THESE TIMING NUMBERS ARE ONLY A SYNTHESIS ESTIMATE.
+      FOR ACCURATE TIMING INFORMATION PLEASE REFER TO THE TRACE REPORT
+      GENERATED AFTER PLACE-and-ROUTE.
+
+Clock Information:
+------------------
+-----------------------------------+------------------------+-------+
+Clock Signal                       | Clock buffer(FF name)  | Load  |
+-----------------------------------+------------------------+-------+
+AD_CLK1                            | DCM_SP:CLK0            | 92    |
+CLK_IN                             | DCM_SP:CLKFX           | 1     |
+AD_CLK2                            | DCM_SP:CLK0            | 58    |
+AD_CLK1                            | DCM_SP:CLK2X           | 5     |
+-----------------------------------+------------------------+-------+
+
+Asynchronous Control Signals Information:
+----------------------------------------
+No asynchronous control signals found in this design
+
+Timing Summary:
+---------------
+Speed Grade: -2
+
+   Minimum period: 6.780ns (Maximum Frequency: 147.493MHz)
+   Minimum input arrival time before clock: 2.083ns
+   Maximum output required time after clock: 5.598ns
+   Maximum combinational path delay: No path found
+
+Timing Details:
+---------------
+All values displayed in nanoseconds (ns)
+
+=========================================================================
+Timing constraint: Default period analysis for Clock 'CLK_IN'
+  Clock period: 6.780ns (frequency: 147.493MHz)
+  Total number of paths / destination ports: 1 / 1
+-------------------------------------------------------------------------
+Delay:               2.260ns (Levels of Logic = 1)
+  Source:            AD_clk_synth (FF)
+  Destination:       AD_clk_synth (FF)
+  Source Clock:      CLK_IN rising 3.0X
+  Destination Clock: CLK_IN rising 3.0X
+
+  Data Path: AD_clk_synth to AD_clk_synth
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     FD:C->Q               2   0.525   0.725  AD_clk_synth (AD_clk_synth)
+     INV:I->O              1   0.255   0.681  AD_clk_synth_INV_30_o1_INV_0 (AD_clk_synth_INV_30_o)
+     FD:D                      0.074          AD_clk_synth
+    ----------------------------------------
+    Total                      2.260ns (0.854ns logic, 1.406ns route)
+                                       (37.8% logic, 62.2% route)
+
+=========================================================================
+Timing constraint: Default period analysis for Clock 'AD_CLK1'
+  Clock period: 4.501ns (frequency: 222.173MHz)
+  Total number of paths / destination ports: 704 / 178
+-------------------------------------------------------------------------
+Delay:               4.501ns (Levels of Logic = 3)
+  Source:            Timer_cntr_7 (FF)
+  Destination:       Scan_En (FF)
+  Source Clock:      AD_CLK1 rising
+  Destination Clock: AD_CLK1 rising
+
+  Data Path: Timer_cntr_7 to Scan_En
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     FD:C->Q               2   0.525   1.181  Timer_cntr_7 (Timer_cntr_7)
+     LUT6:I0->O            1   0.254   0.790  Timer_cntr[15]_GND_4_o_equal_56_o<15>12 (Timer_cntr[15]_GND_4_o_equal_56_o<15>12)
+     LUT5:I3->O           12   0.250   1.177  Timer_cntr[15]_GND_4_o_equal_56_o<15>13 (Timer_cntr[15]_GND_4_o_equal_56_o<15>1)
+     LUT3:I1->O            1   0.250   0.000  Scan_En_rstpot (Scan_En_rstpot)
+     FDR:D                     0.074          Scan_En
+    ----------------------------------------
+    Total                      4.501ns (1.353ns logic, 3.148ns route)
+                                       (30.1% logic, 69.9% route)
+
+=========================================================================
+Timing constraint: Default period analysis for Clock 'AD_CLK2'
+  Clock period: 5.686ns (frequency: 175.871MHz)
+  Total number of paths / destination ports: 1243 / 141
+-------------------------------------------------------------------------
+Delay:               5.686ns (Levels of Logic = 4)
+  Source:            AD_SPI_cntr_0 (FF)
+  Destination:       AD_SPI_reg_2 (FF)
+  Source Clock:      AD_CLK2 rising
+  Destination Clock: AD_CLK2 rising
+
+  Data Path: AD_SPI_cntr_0 to AD_SPI_reg_2
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     FDR:C->Q             16   0.525   1.182  AD_SPI_cntr_0 (AD_SPI_cntr_0)
+     LUT3:I2->O            9   0.254   0.976  GND_4_o_AD_SPI_cntr[6]_equal_19_o<6>21 (GND_4_o_AD_SPI_cntr[6]_equal_19_o<6>2)
+     LUT5:I4->O           14   0.254   1.235  GND_4_o_AD_SPI_cntr[6]_equal_19_o<6>1 (GND_4_o_AD_SPI_cntr[6]_equal_19_o)
+     LUT6:I4->O            1   0.250   0.682  GND_4_o_AD_reg_idx[3]_select_22_OUT<12>2 (GND_4_o_AD_reg_idx[3]_select_22_OUT<12>2)
+     LUT6:I5->O            1   0.254   0.000  GND_4_o_AD_reg_idx[3]_select_22_OUT<12>3 (GND_4_o_AD_reg_idx[3]_select_22_OUT<12>)
+     FDE:D                     0.074          AD_SPI_reg_12
+    ----------------------------------------
+    Total                      5.686ns (1.611ns logic, 4.075ns route)
+                                       (28.3% logic, 71.7% route)
+
+=========================================================================
+Timing constraint: Default OFFSET IN BEFORE for Clock 'AD_CLK1'
+  Total number of paths / destination ports: 12 / 12
+-------------------------------------------------------------------------
+Offset:              2.083ns (Levels of Logic = 1)
+  Source:            ESP32_Ready (PAD)
+  Destination:       esp_rdy_cur (FF)
+  Destination Clock: AD_CLK1 rising
+
+  Data Path: ESP32_Ready to esp_rdy_cur
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     IBUF:I->O             1   1.328   0.681  ESP32_Ready_IBUF (ESP32_Ready_IBUF)
+     FD:D                      0.074          esp_rdy_cur
+    ----------------------------------------
+    Total                      2.083ns (1.402ns logic, 0.681ns route)
+                                       (67.3% logic, 32.7% route)
+
+=========================================================================
+Timing constraint: Default OFFSET OUT AFTER for Clock 'AD_CLK1'
+  Total number of paths / destination ports: 12 / 12
+-------------------------------------------------------------------------
+Offset:              5.282ns (Levels of Logic = 2)
+  Source:            AD_pwup (FF)
+  Destination:       AD_PWDN (PAD)
+  Source Clock:      AD_CLK1 rising
+
+  Data Path: AD_pwup to AD_PWDN
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     FDR:C->Q              7   0.525   0.909  AD_pwup (AD_pwup)
+     INV:I->O              1   0.255   0.681  AD_PWDN1_INV_0 (AD_PWDN_OBUF)
+     OBUF:I->O                 2.912          AD_PWDN_OBUF (AD_PWDN)
+    ----------------------------------------
+    Total                      5.282ns (3.692ns logic, 1.590ns route)
+                                       (69.9% logic, 30.1% route)
+
+=========================================================================
+Timing constraint: Default OFFSET OUT AFTER for Clock 'CLK_IN'
+  Total number of paths / destination ports: 1 / 1
+-------------------------------------------------------------------------
+Offset:              4.162ns (Levels of Logic = 1)
+  Source:            AD_clk_synth (FF)
+  Destination:       AD_CLK_OUT (PAD)
+  Source Clock:      CLK_IN rising 3.0X
+
+  Data Path: AD_clk_synth to AD_CLK_OUT
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     FD:C->Q               2   0.525   0.725  AD_clk_synth (AD_clk_synth)
+     OBUF:I->O                 2.912          AD_CLK_OUT_OBUF (AD_CLK_OUT)
+    ----------------------------------------
+    Total                      4.162ns (3.437ns logic, 0.725ns route)
+                                       (82.6% logic, 17.4% route)
+
+=========================================================================
+Timing constraint: Default OFFSET OUT AFTER for Clock 'AD_CLK2'
+  Total number of paths / destination ports: 5 / 4
+-------------------------------------------------------------------------
+Offset:              5.598ns (Levels of Logic = 2)
+  Source:            AD_SPI_cntr_0 (FF)
+  Destination:       AD_SCLK (PAD)
+  Source Clock:      AD_CLK2 rising
+
+  Data Path: AD_SPI_cntr_0 to AD_SCLK
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     FDR:C->Q             16   0.525   1.181  AD_SPI_cntr_0 (AD_SPI_cntr_0)
+     INV:I->O              2   0.255   0.725  AD_SCLK1_INV_0 (AD_SCLK_OBUF)
+     OBUF:I->O                 2.912          AD_SCLK_OBUF (AD_SCLK)
+    ----------------------------------------
+    Total                      5.598ns (3.692ns logic, 1.906ns route)
+                                       (66.0% logic, 34.0% route)
+
+=========================================================================
+
+Cross Clock Domains Report:
+--------------------------
+
+Clock to Setup on destination clock AD_CLK1
+---------------+---------+---------+---------+---------+
+               | Src:Rise| Src:Fall| Src:Rise| Src:Fall|
+Source Clock   |Dest:Rise|Dest:Rise|Dest:Fall|Dest:Fall|
+---------------+---------+---------+---------+---------+
+AD_CLK1        |    4.501|         |         |         |
+---------------+---------+---------+---------+---------+
+
+Clock to Setup on destination clock AD_CLK2
+---------------+---------+---------+---------+---------+
+               | Src:Rise| Src:Fall| Src:Rise| Src:Fall|
+Source Clock   |Dest:Rise|Dest:Rise|Dest:Fall|Dest:Fall|
+---------------+---------+---------+---------+---------+
+AD_CLK2        |    5.686|         |         |         |
+---------------+---------+---------+---------+---------+
+
+Clock to Setup on destination clock CLK_IN
+---------------+---------+---------+---------+---------+
+               | Src:Rise| Src:Fall| Src:Rise| Src:Fall|
+Source Clock   |Dest:Rise|Dest:Rise|Dest:Fall|Dest:Fall|
+---------------+---------+---------+---------+---------+
+CLK_IN         |    2.260|         |         |         |
+---------------+---------+---------+---------+---------+
+
+=========================================================================
+
+
+Total REAL time to Xst completion: 24.00 secs
+Total CPU time to Xst completion: 23.36 secs
+ 
+--> 
+
+Total memory usage is 4586228 kilobytes
+
+Number of errors   :    0 (   0 filtered)
+Number of warnings :    3 (   0 filtered)
+Number of infos    :    6 (   0 filtered)
+

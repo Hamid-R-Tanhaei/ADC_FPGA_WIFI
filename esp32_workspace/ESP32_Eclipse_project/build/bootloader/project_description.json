@@ -1,0 +1,20 @@
+{
+    "project_name":       "bootloader",
+    "project_path":       "D:/Modules/ESP32/Tools/esp_idf/components/bootloader/subproject",
+    "build_dir":          "D:/GitHub/FPGA_ADC_WIFI/esp32_workspace/ESP32_Eclipse_project/build/bootloader",
+    "config_file":        "D:/GitHub/FPGA_ADC_WIFI/esp32_workspace/ESP32_Eclipse_project/sdkconfig",
+    "config_defaults":    "",
+    "app_elf":            "bootloader.elf",
+    "app_bin":            "bootloader.bin",
+    "git_revision":       "v4.1-dirty",
+    "target":             "esp32",
+    "phy_data_partition": "",
+    "monitor_baud" :      "115200",
+    "monitor_toolprefix": "xtensa-esp32-elf-",
+    "config_environment" : {
+        "COMPONENT_KCONFIGS" : "D:/Modules/ESP32/Tools/esp_idf/components/efuse/Kconfig;D:/Modules/ESP32/Tools/esp_idf/components/esp32/Kconfig;D:/Modules/ESP32/Tools/esp_idf/components/esp_common/Kconfig;D:/Modules/ESP32/Tools/esp_idf/components/log/Kconfig;D:/Modules/ESP32/Tools/esp_idf/components/spi_flash/Kconfig",
+        "COMPONENT_KCONFIGS_PROJBUILD" : "D:/Modules/ESP32/Tools/esp_idf/components/bootloader/Kconfig.projbuild;D:/Modules/ESP32/Tools/esp_idf/components/esptool_py/Kconfig.projbuild;D:/Modules/ESP32/Tools/esp_idf/components/partition_table/Kconfig.projbuild"
+    },
+    "build_components" : [ "bootloader", "bootloader_support", "efuse", "esp32", "esp_common", "esp_rom", "esptool_py", "log", "main", "micro-ecc", "partition_table", "soc", "spi_flash", "xtensa", "" ],
+    "build_component_paths" : [ "D:/Modules/ESP32/Tools/esp_idf/components/bootloader", "D:/Modules/ESP32/Tools/esp_idf/components/bootloader_support", "D:/Modules/ESP32/Tools/esp_idf/components/efuse", "D:/Modules/ESP32/Tools/esp_idf/components/esp32", "D:/Modules/ESP32/Tools/esp_idf/components/esp_common", "D:/Modules/ESP32/Tools/esp_idf/components/esp_rom", "D:/Modules/ESP32/Tools/esp_idf/components/esptool_py", "D:/Modules/ESP32/Tools/esp_idf/components/log", "D:/Modules/ESP32/Tools/esp_idf/components/bootloader/subproject/main", "D:/Modules/ESP32/Tools/esp_idf/components/bootloader/subproject/components/micro-ecc", "D:/Modules/ESP32/Tools/esp_idf/components/partition_table", "D:/Modules/ESP32/Tools/esp_idf/components/soc", "D:/Modules/ESP32/Tools/esp_idf/components/spi_flash", "D:/Modules/ESP32/Tools/esp_idf/components/xtensa", "" ]
+}

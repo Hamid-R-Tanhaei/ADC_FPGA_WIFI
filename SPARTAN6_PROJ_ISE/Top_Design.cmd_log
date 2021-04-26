@@ -1,0 +1,6 @@
+xst -intstyle ise -ifn "D:/GitHub/FPGA_ADC_WIFI/SPARTAN6_PROJ_ISE/Top_Design.xst" -ofn "D:/GitHub/FPGA_ADC_WIFI/SPARTAN6_PROJ_ISE/Top_Design.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc CONSTRAINTS.ucf -p xc6slx9-tqg144-2 Top_Design.ngc Top_Design.ngd  
+map -intstyle ise -p xc6slx9-tqg144-2 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o Top_Design_map.ncd Top_Design.ngd Top_Design.pcf 
+par -w -intstyle ise -ol high -mt off Top_Design_map.ncd Top_Design.ncd Top_Design.pcf 
+trce -intstyle ise -v 3 -s 2 -n 3 -fastpaths -xml Top_Design.twx Top_Design.ncd -o Top_Design.twr Top_Design.pcf -ucf CONSTRAINTS.ucf 
+bitgen -intstyle ise -f Top_Design.ut Top_Design.ncd 

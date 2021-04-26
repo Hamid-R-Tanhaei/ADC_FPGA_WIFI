@@ -1,0 +1,2 @@
+vhdl work ../../ADSPI_DCM.vhd
+vhdl work ../example_design/ADSPI_DCM_exdes.vhd

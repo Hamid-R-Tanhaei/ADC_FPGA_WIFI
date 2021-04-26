@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<launchConfiguration type="com.espressif.idf.launch.serial.launchConfigurationType">
+    <booleanAttribute key="editedByExternalToolsMainTab" value="true"/>
+    <listAttribute key="org.eclipse.debug.ui.favoriteGroups">
+        <listEntry value="org.eclipse.debug.ui.launchGroup.run"/>
+    </listAttribute>
+</launchConfiguration>

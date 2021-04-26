@@ -1,0 +1,162 @@
+//! **************************************************************************
+// Written by: Map P.20131013 on Mon Apr 26 01:01:59 2021
+//! **************************************************************************
+
+SCHEMATIC START;
+COMP "AD_MODE" LOCATE = SITE "P132" LEVEL 1;
+COMP "AD_TXEN" LOCATE = SITE "P92" LEVEL 1;
+COMP "AD_CLK1" LOCATE = SITE "P88" LEVEL 1;
+COMP "AD_CLK2" LOCATE = SITE "P124" LEVEL 1;
+COMP "CLK_IN" LOCATE = SITE "P134" LEVEL 1;
+COMP "AD_SCLK" LOCATE = SITE "P84" LEVEL 1;
+COMP "AD_CNFG" LOCATE = SITE "P131" LEVEL 1;
+COMP "AD_SDIO" LOCATE = SITE "P87" LEVEL 1;
+COMP "AD_SDO" LOCATE = SITE "P85" LEVEL 1;
+COMP "ESP32_clk" LOCATE = SITE "P35" LEVEL 1;
+COMP "ESP32_Ready" LOCATE = SITE "P34" LEVEL 1;
+COMP "AD_RST" LOCATE = SITE "P74" LEVEL 1;
+COMP "AD_PWDN" LOCATE = SITE "P111" LEVEL 1;
+COMP "AD_ADIO<0>" LOCATE = SITE "P94" LEVEL 1;
+COMP "AD_ADIO<1>" LOCATE = SITE "P95" LEVEL 1;
+COMP "AD_ADIO<2>" LOCATE = SITE "P97" LEVEL 1;
+COMP "Test_Rx_n" LOCATE = SITE "P114" LEVEL 1;
+COMP "AD_PGA<0>" LOCATE = SITE "P75" LEVEL 1;
+COMP "AD_ADIO<3>" LOCATE = SITE "P98" LEVEL 1;
+COMP "Test_Rx_p" LOCATE = SITE "P115" LEVEL 1;
+COMP "AD_PGA<1>" LOCATE = SITE "P78" LEVEL 1;
+COMP "AD_ADIO<4>" LOCATE = SITE "P99" LEVEL 1;
+COMP "AD_SEN" LOCATE = SITE "P83" LEVEL 1;
+COMP "AD_CLK_OUT" LOCATE = SITE "P127" LEVEL 1;
+COMP "ESP32_Data<0>" LOCATE = SITE "P22" LEVEL 1;
+COMP "AD_PGA<2>" LOCATE = SITE "P79" LEVEL 1;
+COMP "AD_ADIO<5>" LOCATE = SITE "P100" LEVEL 1;
+COMP "ESP32_Data<1>" LOCATE = SITE "P21" LEVEL 1;
+COMP "AD_PGA<3>" LOCATE = SITE "P80" LEVEL 1;
+COMP "AD_ADIO<6>" LOCATE = SITE "P101" LEVEL 1;
+COMP "ESP32_Data<2>" LOCATE = SITE "P32" LEVEL 1;
+COMP "AD_PGA<4>" LOCATE = SITE "P81" LEVEL 1;
+COMP "AD_ADIO<7>" LOCATE = SITE "P102" LEVEL 1;
+COMP "AD_RXEN" LOCATE = SITE "P93" LEVEL 1;
+COMP "ESP32_Data<3>" LOCATE = SITE "P33" LEVEL 1;
+COMP "AD_PGA<5>" LOCATE = SITE "P82" LEVEL 1;
+COMP "AD_ADIO<8>" LOCATE = SITE "P104" LEVEL 1;
+COMP "ESP32_Data<4>" LOCATE = SITE "P29" LEVEL 1;
+COMP "AD_ADIO<9>" LOCATE = SITE "P105" LEVEL 1;
+COMP "ESP32_Data<5>" LOCATE = SITE "P30" LEVEL 1;
+COMP "ESP32_Data<6>" LOCATE = SITE "P24" LEVEL 1;
+COMP "ESP32_Data<7>" LOCATE = SITE "P26" LEVEL 1;
+PIN
+        inst_RAM_block1/U0/xst_blk_mem_generator/gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[0].ram.r/s6_noinit.ram/SDP.SIMPLE_PRIM18.ram_pins<28>
+        = BEL
+        "inst_RAM_block1/U0/xst_blk_mem_generator/gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[0].ram.r/s6_noinit.ram/SDP.SIMPLE_PRIM18.ram"
+        PINNAME CLKA;
+PIN
+        inst_RAM_block1/U0/xst_blk_mem_generator/gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[0].ram.r/s6_noinit.ram/SDP.SIMPLE_PRIM18.ram_pins<29>
+        = BEL
+        "inst_RAM_block1/U0/xst_blk_mem_generator/gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[0].ram.r/s6_noinit.ram/SDP.SIMPLE_PRIM18.ram"
+        PINNAME CLKB;
+PIN SP6_INS_BUFIO2FB_DCM_ML_BUFIO2FB_3_pins<1> = BEL
+        "SP6_INS_BUFIO2FB_DCM_ML_BUFIO2FB_3" PINNAME O;
+PIN Inst_Post_DCM/dcm_sp_inst_pins<2> = BEL "Inst_Post_DCM/dcm_sp_inst"
+        PINNAME CLKFB;
+TIMEGRP Inst_Post_DCM_clk0 = BEL "esp_rdy_cur" BEL "esp_clk_cur" BEL
+        "esp_rdy_pre" BEL "RAM1_WE_0" BEL "esp_clk_pre" BEL "RAM1_RAddr_0" BEL
+        "RAM1_RAddr_1" BEL "RAM1_RAddr_2" BEL "RAM1_RAddr_3" BEL
+        "RAM1_RAddr_4" BEL "RAM1_RAddr_5" BEL "RAM1_RAddr_6" BEL
+        "RAM1_RAddr_7" BEL "RAM1_RAddr_8" BEL "RAM1_RAddr_9" BEL "AD_Rx_Dat_0"
+        BEL "AD_Rx_Dat_1" BEL "AD_Rx_Dat_2" BEL "AD_Rx_Dat_3" BEL
+        "AD_Rx_Dat_4" BEL "AD_Rx_Dat_5" BEL "AD_Rx_Dat_6" BEL "AD_Rx_Dat_7"
+        BEL "AD_Rx_Dat_8" BEL "AD_Rx_Dat_9" BEL "RAM1_WAddr_0" BEL
+        "RAM1_WAddr_1" BEL "RAM1_WAddr_2" BEL "RAM1_WAddr_3" BEL
+        "RAM1_WAddr_4" BEL "RAM1_WAddr_5" BEL "RAM1_WAddr_6" BEL
+        "RAM1_WAddr_7" BEL "RAM1_WAddr_8" BEL "RAM1_WAddr_9" BEL
+        "RAM1_WData_0" BEL "RAM1_WData_1" BEL "RAM1_WData_2" BEL
+        "RAM1_WData_3" BEL "RAM1_WData_4" BEL "RAM1_WData_5" BEL
+        "RAM1_WData_6" BEL "RAM1_WData_7" BEL "RAM1_WData_8" BEL
+        "RAM1_WData_9" BEL "ESP_Data_out_0" BEL "ESP_Data_out_1" BEL
+        "ESP_Data_out_2" BEL "ESP_Data_out_3" BEL "ESP_Data_out_4" BEL
+        "ESP_Data_out_5" BEL "ESP_Data_out_6" BEL "ESP_Data_out_7" BEL
+        "Timer_cntr_0" BEL "Timer_cntr_1" BEL "Timer_cntr_2" BEL
+        "Timer_cntr_3" BEL "Timer_cntr_4" BEL "Timer_cntr_5" BEL
+        "Timer_cntr_6" BEL "Timer_cntr_7" BEL "Timer_cntr_8" BEL
+        "Timer_cntr_9" BEL "Timer_cntr_10" BEL "Timer_cntr_11" BEL
+        "Timer_cntr_12" BEL "Timer_cntr_13" BEL "Timer_cntr_14" BEL
+        "Timer_cntr_15" BEL "Ram_Raddr_cntr_0" BEL "Ram_Raddr_cntr_1" BEL
+        "Ram_Raddr_cntr_2" BEL "Ram_Raddr_cntr_3" BEL "Ram_Raddr_cntr_4" BEL
+        "Ram_Raddr_cntr_5" BEL "Ram_Raddr_cntr_6" BEL "Ram_Raddr_cntr_7" BEL
+        "Ram_Raddr_cntr_8" BEL "Ram_Raddr_cntr_9" BEL "AD_pwup" BEL "Scan_En"
+        BEL "Ram_Waddr_cntr_0" BEL "Ram_Waddr_cntr_1" BEL "Ram_Waddr_cntr_2"
+        BEL "Ram_Waddr_cntr_3" BEL "Ram_Waddr_cntr_4" BEL "Ram_Waddr_cntr_5"
+        BEL "Ram_Waddr_cntr_6" BEL "Ram_Waddr_cntr_7" BEL "Ram_Waddr_cntr_8"
+        BEL "Ram_Waddr_cntr_9" PIN
+        "inst_RAM_block1/U0/xst_blk_mem_generator/gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[0].ram.r/s6_noinit.ram/SDP.SIMPLE_PRIM18.ram_pins<28>"
+        PIN
+        "inst_RAM_block1/U0/xst_blk_mem_generator/gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[0].ram.r/s6_noinit.ram/SDP.SIMPLE_PRIM18.ram_pins<29>"
+        BEL "Inst_Post_DCM/clkout1_buf" PIN
+        "SP6_INS_BUFIO2FB_DCM_ML_BUFIO2FB_3_pins<1>" PIN
+        "Inst_Post_DCM/dcm_sp_inst_pins<2>";
+TIMEGRP inst_Pre_DCM_clkfx = BEL "AD_clk_synth" BEL
+        "inst_Pre_DCM/clkout1_buf";
+PIN SP6_INS_BUFIO2FB_DCM_ML_BUFIO2FB_4_pins<1> = BEL
+        "SP6_INS_BUFIO2FB_DCM_ML_BUFIO2FB_4" PINNAME O;
+PIN inst_ADSPI_DCM/dcm_sp_inst_pins<1> = BEL "inst_ADSPI_DCM/dcm_sp_inst"
+        PINNAME CLKFB;
+TIMEGRP inst_ADSPI_DCM_clk0 = BEL "AD_SDIO_dir" BEL "AD_SPI_reg_0" BEL
+        "AD_SPI_reg_1" BEL "AD_SPI_reg_2" BEL "AD_SPI_reg_3" BEL
+        "AD_SPI_reg_4" BEL "AD_SPI_reg_5" BEL "AD_SPI_reg_6" BEL
+        "AD_SPI_reg_7" BEL "AD_SPI_reg_8" BEL "AD_SPI_reg_9" BEL
+        "AD_SPI_reg_10" BEL "AD_SPI_reg_11" BEL "AD_SPI_reg_12" BEL
+        "AD_SPI_reg_13" BEL "AD_SPI_reg_14" BEL "AD_SDIO_out" BEL
+        "AD_Readback_flag" BEL "AD_reg_idx_0" BEL "AD_reg_idx_1" BEL
+        "AD_reg_idx_2" BEL "AD_reg_idx_3" BEL "AD_SPI_cntr_1" BEL
+        "AD_SPI_cntr_0" BEL "AD_SPI_cntr_2" BEL "AD_SPI_cntr_3" BEL
+        "AD_SPI_cntr_6" BEL "AD_SPI_cntr_4" BEL "AD_SPI_cntr_5" BEL
+        "AD_RST_cntr_0" BEL "AD_RST_cntr_1" BEL "AD_RST_cntr_2" BEL
+        "AD_RST_cntr_3" BEL "AD_RST_cntr_4" BEL "AD_RST_cntr_5" BEL
+        "AD_RST_cntr_6" BEL "AD_RST_cntr_7" BEL "AD_RST_cntr_8" BEL
+        "AD_RST_cntr_9" BEL "AD_RST_cntr_10" BEL "AD_RST_cntr_11" BEL
+        "AD_RST_cntr_12" BEL "AD_RST_cntr_13" BEL "AD_RST_cntr_14" BEL
+        "AD_RST_cntr_15" BEL "AD_RST_cntr_16" BEL "AD_RST_cntr_17" BEL
+        "AD_RST_cntr_18" BEL "AD_RST_cntr_19" BEL "AD_RST_cntr_20" BEL
+        "AD_RST_cntr_21" BEL "AD_RST_cntr_22" BEL "AD_RST_cntr_23" BEL
+        "AD_RST_cntr_24" BEL "AD_res_flag" BEL "AD_reset" BEL "AD_SEN" BEL
+        "AD_init" BEL "inst_ADSPI_DCM/clkout1_buf" PIN
+        "SP6_INS_BUFIO2FB_DCM_ML_BUFIO2FB_4_pins<1>" PIN
+        "inst_ADSPI_DCM/dcm_sp_inst_pins<1>";
+TIMEGRP Inst_Post_DCM_clk2x = BEL "Inst_Post_DCM/clkout2_buf" BEL
+        "test_sig_cntr_2" BEL "test_sig_cntr_0" BEL "test_sig_cntr_1" BEL
+        "test_sig_cntr_3" BEL "Test_sig_Rx";
+PIN SP6_BUFIO_INSERT_ML_BUFIO2_0_pins<0> = BEL "SP6_BUFIO_INSERT_ML_BUFIO2_0"
+        PINNAME DIVCLK;
+PIN Inst_Post_DCM/dcm_sp_inst_pins<3> = BEL "Inst_Post_DCM/dcm_sp_inst"
+        PINNAME CLKIN;
+TIMEGRP sys_clk_pin = PIN "SP6_BUFIO_INSERT_ML_BUFIO2_0_pins<0>" PIN
+        "Inst_Post_DCM/dcm_sp_inst_pins<3>";
+PIN SP6_BUFIO_INSERT_ML_BUFIO2_1_pins<0> = BEL "SP6_BUFIO_INSERT_ML_BUFIO2_1"
+        PINNAME DIVCLK;
+PIN inst_ADSPI_DCM/dcm_sp_inst_pins<2> = BEL "inst_ADSPI_DCM/dcm_sp_inst"
+        PINNAME CLKIN;
+TIMEGRP AD_CTRL_clk = PIN "SP6_BUFIO_INSERT_ML_BUFIO2_1_pins<0>" PIN
+        "inst_ADSPI_DCM/dcm_sp_inst_pins<2>";
+PIN SP6_BUFIO_INSERT_ML_BUFIO2_2_pins<0> = BEL "SP6_BUFIO_INSERT_ML_BUFIO2_2"
+        PINNAME DIVCLK;
+PIN inst_Pre_DCM/dcm_sp_inst_pins<3> = BEL "inst_Pre_DCM/dcm_sp_inst" PINNAME
+        CLKIN;
+TIMEGRP osc_clk_pin = PIN "SP6_BUFIO_INSERT_ML_BUFIO2_2_pins<0>" PIN
+        "inst_Pre_DCM/dcm_sp_inst_pins<3>";
+TS_osc_clk_pin = PERIOD TIMEGRP "osc_clk_pin" 50 MHz HIGH 50% INPUT_JITTER 0.2
+        ns;
+TS_sys_clk_pin = PERIOD TIMEGRP "sys_clk_pin" 75 MHz HIGH 50% INPUT_JITTER 0.2
+        ns;
+TS_AD_CTRL_clk = PERIOD TIMEGRP "AD_CTRL_clk" 37.5 MHz HIGH 50% INPUT_JITTER
+        0.2 ns;
+TS_inst_Pre_DCM_clkfx = PERIOD TIMEGRP "inst_Pre_DCM_clkfx" TS_osc_clk_pin * 3
+        HIGH 50% INPUT_JITTER 0.2 ns;
+TS_Inst_Post_DCM_clk2x = PERIOD TIMEGRP "Inst_Post_DCM_clk2x" TS_sys_clk_pin *
+        2 HIGH 50% INPUT_JITTER 0.2 ns;
+TS_Inst_Post_DCM_clk0 = PERIOD TIMEGRP "Inst_Post_DCM_clk0" TS_sys_clk_pin
+        HIGH 50% INPUT_JITTER 0.2 ns;
+TS_inst_ADSPI_DCM_clk0 = PERIOD TIMEGRP "inst_ADSPI_DCM_clk0" TS_AD_CTRL_clk
+        HIGH 50% INPUT_JITTER 0.2 ns;
+SCHEMATIC END;
+

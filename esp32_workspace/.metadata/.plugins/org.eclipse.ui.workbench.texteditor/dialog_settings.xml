@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<section name="Workbench">
+	<section name="org.eclipse.ui.texteditor.FindReplaceDialog">
+		<item key="selection" value="tcp"/>
+		<item key="wrap" value="true"/>
+		<item key="casesensitive" value="false"/>
+		<item key="wholeword" value="false"/>
+		<item key="incremental" value="false"/>
+		<item key="isRegEx" value="false"/>
+		<list key="findhistory">
+			<item value="tcp"/>
+			<item value="RX_Channel"/>
+			<item value="Monitoring_en"/>
+			<item value="fpga_interaction"/>
+			<item value="ESP_DAT8"/>
+			<item value="ESP_DAT0"/>
+			<item value="gpio_get_level"/>
+			<item value="ESP_RDY"/>
+			<item value="1024"/>
+			<item value="2048"/>
+			<item value="EXAMPLE_ESP_WIFI_CHANNEL"/>
+			<item value="channel"/>
+			<item value="WATCH"/>
+			<item value="watch"/>
+			<item value="do_retransmit"/>
+		</list>
+		<list key="replacehistory">
+			<item value="Rx_channel"/>
+		</list>
+	</section>
+	<section name="org.eclipse.ui.texteditor.FindReplaceDialog_dialogBounds">
+		<item key="DIALOG_X_ORIGIN" value="1236"/>
+		<item key="DIALOG_Y_ORIGIN" value="224"/>
+		<item key="DIALOG_WIDTH" value="336"/>
+		<item key="DIALOG_HEIGHT" value="454"/>
+		<item key="DIALOG_FONT_NAME" value="1|Segoe UI|9.0|0|WINDOWS|1|-15|0|0|0|400|0|0|0|1|0|0|0|0|Segoe UI"/>
+	</section>
+</section>

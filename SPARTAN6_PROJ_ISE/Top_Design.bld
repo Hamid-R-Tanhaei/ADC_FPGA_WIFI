@@ -1,0 +1,75 @@
+Release 14.7 ngdbuild P.20131013 (nt64)
+Copyright (c) 1995-2013 Xilinx, Inc.  All rights reserved.
+
+Command Line: C:\Xilinx\14.7\ISE_DS\ISE\bin\nt64\unwrapped\ngdbuild.exe
+-intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc CONSTRAINTS.ucf -p
+xc6slx9-tqg144-2 Top_Design.ngc Top_Design.ngd
+
+Reading NGO file "D:/GitHub/FPGA_ADC_WIFI/SPARTAN6_PROJ_ISE/Top_Design.ngc" ...
+Loading design module "ipcore_dir/RAM_Block.ngc"...
+Gathering constraint information from source properties...
+Done.
+
+Annotating constraints to design from ucf file "CONSTRAINTS.ucf" ...
+Resolving constraint associations...
+Checking Constraint Associations...
+INFO:ConstraintSystem:178 - TNM 'osc_clk_pin', used in period specification
+   'TS_osc_clk_pin', was traced into DCM_SP instance inst_Pre_DCM/dcm_sp_inst.
+   The following new TNM groups and period specifications were generated at the
+   DCM_SP output(s): 
+   CLKFX: <TIMESPEC TS_inst_Pre_DCM_clkfx = PERIOD "inst_Pre_DCM_clkfx"
+   TS_osc_clk_pin * 3 HIGH 50% INPUT_JITTER 200 ps>
+
+INFO:ConstraintSystem:178 - TNM 'sys_clk_pin', used in period specification
+   'TS_sys_clk_pin', was traced into DCM_SP instance Inst_Post_DCM/dcm_sp_inst.
+   The following new TNM groups and period specifications were generated at the
+   DCM_SP output(s): 
+   CLK2X: <TIMESPEC TS_Inst_Post_DCM_clk2x = PERIOD "Inst_Post_DCM_clk2x"
+   TS_sys_clk_pin * 2 HIGH 50% INPUT_JITTER 200 ps>
+
+INFO:ConstraintSystem:178 - TNM 'sys_clk_pin', used in period specification
+   'TS_sys_clk_pin', was traced into DCM_SP instance Inst_Post_DCM/dcm_sp_inst.
+   The following new TNM groups and period specifications were generated at the
+   DCM_SP output(s): 
+   CLK0: <TIMESPEC TS_Inst_Post_DCM_clk0 = PERIOD "Inst_Post_DCM_clk0"
+   TS_sys_clk_pin HIGH 50% INPUT_JITTER 200 ps>
+
+INFO:ConstraintSystem:178 - TNM 'AD_CTRL_clk', used in period specification
+   'TS_AD_CTRL_clk', was traced into DCM_SP instance inst_ADSPI_DCM/dcm_sp_inst.
+   The following new TNM groups and period specifications were generated at the
+   DCM_SP output(s): 
+   CLK0: <TIMESPEC TS_inst_ADSPI_DCM_clk0 = PERIOD "inst_ADSPI_DCM_clk0"
+   TS_AD_CTRL_clk HIGH 50% INPUT_JITTER 200 ps>
+
+Done...
+
+WARNING:NgdBuild:1212 - User specified non-default attribute value (13.333) was
+   detected for the CLKIN_PERIOD attribute on DCM "Inst_Post_DCM/dcm_sp_inst". 
+   This does not match the PERIOD constraint value (75 MHz.).  The uncertainty
+   calculation will use the non-default attribute value.  This could result in
+   incorrect uncertainty calculated for DCM output clocks.
+WARNING:NgdBuild:1212 - User specified non-default attribute value (26.666) was
+   detected for the CLKIN_PERIOD attribute on DCM "inst_ADSPI_DCM/dcm_sp_inst". 
+   This does not match the PERIOD constraint value (37.5 MHz.).  The uncertainty
+   calculation will use the non-default attribute value.  This could result in
+   incorrect uncertainty calculated for DCM output clocks.
+Checking expanded design ...
+
+Partition Implementation Status
+-------------------------------
+
+  No Partitions were found in this design.
+
+-------------------------------
+
+NGDBUILD Design Results Summary:
+  Number of errors:     0
+  Number of warnings:   2
+
+Total memory usage is 4465328 kilobytes
+
+Writing NGD file "Top_Design.ngd" ...
+Total REAL time to NGDBUILD completion:  11 sec
+Total CPU time to NGDBUILD completion:   11 sec
+
+Writing NGDBUILD log file "Top_Design.bld"...

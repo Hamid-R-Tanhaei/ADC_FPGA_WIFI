@@ -1,0 +1,20 @@
+01:34:58 **** Clean-only build of configuration Default for project esp_wrover_test2 ****
+make clean 
+make: cygpath: Command not found
+make: cygpath: Command not found
+make: cygpath: Command not found
+make: cygpath: Command not found
+make: cygpath: Command not found
+make: cygpath: Command not found
+Python requirements from d:/Modules/ESP32/Tools/esp_idf\requirements.txt are satisfied.
+Traceback (most recent call last):
+  File "d:/Modules/ESP32/Tools/esp_idf/tools/kconfig_new/prepare_kconfig_files.py", line 96, in <module>
+    _prepare_source_files(env)
+  File "d:/Modules/ESP32/Tools/esp_idf/tools/kconfig_new/prepare_kconfig_files.py", line 67, in _prepare_source_files
+    _write_source_file(env_dict['COMPONENT_KCONFIGS'], env_dict['COMPONENT_KCONFIGS_SOURCE_FILE'])
+  File "d:/Modules/ESP32/Tools/esp_idf/tools/kconfig_new/prepare_kconfig_files.py", line 63, in _write_source_file
+    with open(config_file, 'w', encoding='utf-8') as f:
+FileNotFoundError: [Errno 2] No such file or directory: ''
+
+01:34:58 Build Failed. 6 errors, 0 warnings. (took 813ms)
+
